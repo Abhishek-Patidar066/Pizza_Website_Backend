@@ -1,0 +1,5 @@
+venv
+seed_data.python
+__pycache__/
+.pytest_cache/
+pizza.db

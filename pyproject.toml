@@ -1,0 +1,28 @@
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "pizza-fastapi"
+version = "0.1.0"
+description = "A RESTful Pizza Ordering API built with FastAPI to practice CRUD operations and backend concepts."
+authors = [
+    {name = "Abhishek Patidar",email = "abhipatidar066@gmail.com"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi (>=0.110,<0.111)",
+    "uvicorn (>=0.29,<0.30)",
+    "sqlitedict (>=2.1.0,<3.0.0)",
+]
+
+[tool.poetry]
+packages = [
+    {include = "app"}
+]
+
+[dependency-groups]
+dev = [
+    "pytest (>=8.0,<9.0)",
+]
