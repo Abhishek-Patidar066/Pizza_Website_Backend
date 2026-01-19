@@ -1,5 +1,5 @@
 venv
-seed_data.python
+seed_data.py
 __pycache__/
 .pytest_cache/
 pizza.db
